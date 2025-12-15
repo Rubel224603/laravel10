@@ -17,10 +17,11 @@ use App\Http\Controllers\API\ApiController;
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
-// });
 
-Route::middleware(['auth:sanctum','role:admin'])->group(function(){
-    Route::post('/login',[ApiController::class,'goForLogin']);
-});
+Route::post('/login',[ApiController::class,'goForLogin']);
+
+
+// Route::middleware(['auth:sanctum','role:admin'])->group(function(){
+// });
 
 
