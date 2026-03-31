@@ -51,4 +51,7 @@ class ApiController extends Controller
             ], 500);
         }
     }
+    public function index(){
+        return "Hello";
+    }
 }
